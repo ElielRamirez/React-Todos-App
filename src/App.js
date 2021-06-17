@@ -38,7 +38,6 @@ function App() {
     const onSubmitHandler = async (e) => {
       e.preventDefault();
       if(currentId === 0 ){
-        console.log('Create')
         const result = await createTodo(todo);
         setTodos([...todos, result])
       }else{
